@@ -11,10 +11,18 @@ NAVIGATION
     list-style-type: none;
     margin: -8px 0 0 0;
     padding: 0;
-    background-color: rgba(270,270,270,0);
+    
     position: fixed;
     width: 100%;
     top: 8px;
+}
+
+.solid-nav {
+    background-color: green;
+}
+
+.clear-nav {
+    background-color: rgba(270,270,270,0);
 }
 
 li {
@@ -77,7 +85,7 @@ HOME PAGE IMAGE DIV
     font-size: 1rem;
     padding: 20px 80px 20px 80px;
     color: white;
-    
+    font-weight: 500;
 }
 
 #home-button:hover {
