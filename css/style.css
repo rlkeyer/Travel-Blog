@@ -46,6 +46,15 @@ li a:hover {
     color: #a6a6a6;
 }
 
+.dropdown {
+    position: absolute;
+    display: none;
+}
+
+.sub-nav:hover .dropdown {
+    display: block;
+}
+
 /************************************************************
 HOME PAGE IMAGE DIV
 ************************************************************/
@@ -139,21 +148,6 @@ PLACES DIV
 .cell {
     width: calc(84% / 3);
     margin: 2%;
-}
-
-#nepal {
-    background-image: url('../img/nepal.jpg'); /*35% opacity in GIMP*/
-    background-size: cover;
-}
-
-.place-name {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 2.5rem;
-    text-align: center;
-    vertical-align: middle;
-    color: red;
-    padding: 75px;
 }
 
 a {
