@@ -52,7 +52,19 @@ li a:hover {
 }
 
 .sub-nav:hover .dropdown {
+    display: flex;
+    flex-direction: column;
+    margin-left: 280px;
+    background-color: rgba(270, 270, 270, 0.6);
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  #nav a:not(:first-child) {display: none;}
+  #nav a.icon {
+    float: right;
     display: block;
+  }
 }
 
 /************************************************************
