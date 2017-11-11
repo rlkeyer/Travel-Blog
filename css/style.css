@@ -125,7 +125,7 @@ PLACES DIV
 
 .places {
     padding-top: 40px;
-    margin-top: -50px;
+    margin-top: -45px;
 }
 
 .section-header {
@@ -202,7 +202,9 @@ a {
     display: block;
     text-align: left;
   }
-  
+  .home {
+      max-width: 90%
+  }
 
 }
 
@@ -238,5 +240,9 @@ a {
   }
   .home {
       padding-top: 50vh;
+  }
+  #home-button {
+      padding: 15px 60px 15px 60px;
+      font-size: .9rem;
   }
 }
