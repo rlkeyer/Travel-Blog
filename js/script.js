@@ -1,10 +1,11 @@
-window.onscroll = function() {myFunction()};
 
-function myFunction() {
-    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-        document.getElementById("nav").className = "solid-nav"
+
+function navFunction() {
+    var navigation = document.getElementById("nav");
+    if (navigation.className === "topnav") {
+        navigation.className += " responsive";
     }
     else {
-        document.getElementById("nav").className = "clear-nav";
+        navigation.className = "topnav";
     }
 }
