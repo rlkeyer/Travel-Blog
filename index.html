@@ -7,42 +7,28 @@ Most common ways for responsive layout are media queries and bootstrap
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">  
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700" rel="stylesheet">
-    
 </head>
 <body>
-    <div>   
-        <ul id="nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Start Here</a></li>
-            <li><a href="#">Travel Blog</a></li>
-            <li class="sub-nav"><a href="#">Destinations</a>
-                <ul class="dropdown">
-                    <li><a href="#">Alaska</a></li>
-                    <li><a href="#">New Zealand</a></li>
-                    <li><a href="#">John Muir Trail</a></li>
-                    <li><a href="#">Singapore</a></li>
-                    <li><a href="#">Nepal</a></li>
-                    <li><a href="#">Vietnam</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Travel Tips</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
-        </ul>   
+    <div class="topnav" id="nav">   
+        <a href="#">Travel Journal</a>
+        <a href="#">Start Here</a>
+        <a href="#">Destinations</a>
+        <a href="#">Travel Tips</a>
+        <a href="#">Contact</a>
+        <span><a href="javascript:void(0);" class="icon" id="icon" onclick="navFunction()">&#9776;</a></span>
     </div>
     <div class="wrapper">
         <div class="home">
             <h1>A Travel Journal</h1>
             <h4>Travel journal travel journal travel journal travel journal travel journal travel journal</h4>
-            <a href="#" id="home-button">Get Started</a>
+            <a href="#places" id="home-button">Get Started</a>
         </div>
-        <a href="#" class="next">></a>
-        <a href="#" class="prev"><</a>
     </div>
-    <div class="places">
+    <div class="places" id="places">
         <p class="section-header">PLACES TO GO</p>
     </div>
     <div class="places-gallery">
@@ -70,6 +56,9 @@ Most common ways for responsive layout are media queries and bootstrap
     <div class="recent">
         <p class="section-header">RECENT POSTS</p>
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+ 
+
 </body>
 </html>
