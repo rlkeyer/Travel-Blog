@@ -15,9 +15,8 @@ Most common ways for responsive layout are media queries and bootstrap
 <body>
     <div class="topnav" id="nav">   
         <a href="#">Travel Journal</a>
-        <a href="#">Start Here</a>
-        <a href="#">Destinations</a>
-        <a href="#">Travel Tips</a>
+        <a href="#places">Destinations</a>
+        <a href="#travel-tips">Travel Tips</a>
         <a href="#">Contact</a>
         <span><a href="javascript:void(0);" class="icon" id="icon" onclick="navFunction()">&#9776;</a></span>
     </div>
@@ -34,27 +33,33 @@ Most common ways for responsive layout are media queries and bootstrap
     <div class="places-gallery">
         <div class="grid">
             <div class="cell">
-                <a href="#"><img src="img/alaska.JPG"></a>
+                <a href="#"><img src="img/alaska.jpg"></a>
             </div>
             <div class="cell">
-                <a href="#"><img src="img/new-zealand.JPG"></a>                
+                <a href="#"><img src="img/new-zealand.jpg"></a>                
             </div>
             <div class="cell">
-                <a href="#"><img src="img/jmt.JPG"></a>
+                <a href="#"><img src="img/jmt.jpg"></a>
             </div>
             <div class="cell">
-                <a href="#"><img src="img/singapore.JPG"></a>
+                <a href="#"><img src="img/singapore.jpg"></a>
             </div>
             <div class="cell" id="nepal">
-                <a href="#"><img src="img/nepal.JPG"></a>
+                <a href="#"><img src="img/nepal.jpg"></a>
             </div>
             <div class="cell">
-                <a href="#"><img src="img/vietnam.JPG"></a>
+                <a href="#"><img src="img/vietnam.jpg"></a>
             </div>
         </div>
     </div>
-    <div class="recent">
-        <p class="section-header">RECENT POSTS</p>
+    <div class="travel-tips">
+        <p class="section-header">TRAVEL TIPS</p>
+    </div>
+    <div class="travel-gallery">
+        <div class="travel-grid">
+            <div class="travel-cell">
+            </div>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
