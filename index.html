@@ -14,13 +14,13 @@ Most common ways for responsive layout are media queries and bootstrap
 </head>
 <body>
     <div class="topnav" id="nav">   
-        <a href="#">Travel Journal</a>
-        <a href="#places">Destinations</a>
+        <a href="#wrapper">Travel Journal</a>
+        <a href="#places" id="destinations">Destinations</a>
         <a href="#travel-tips">Travel Tips</a>
         <a href="#contact">Contact</a>
         <span><a href="javascript:void(0);" class="icon" id="icon" onclick="navFunction()">&#9776;</a></span>
     </div>
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
         <div class="home">
             <h1>A Travel Journal</h1>
             <h4>Travel journal travel journal travel journal travel journal travel journal travel journal</h4>
@@ -82,7 +82,7 @@ Most common ways for responsive layout are media queries and bootstrap
             <label for="question">Question</label>
             <textarea id="question" name="question" placeholder="Write your question here..." style="height:175px"></textarea>
 
-            <input type="submit" value="Submit">
+            <input type="submit" id="submit" value="Submit">
         </form>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
