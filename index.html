@@ -17,7 +17,7 @@ Most common ways for responsive layout are media queries and bootstrap
         <a href="#">Travel Journal</a>
         <a href="#places">Destinations</a>
         <a href="#travel-tips">Travel Tips</a>
-        <a href="#">Contact</a>
+        <a href="#contact">Contact</a>
         <span><a href="javascript:void(0);" class="icon" id="icon" onclick="navFunction()">&#9776;</a></span>
     </div>
     <div class="wrapper">
@@ -52,14 +52,38 @@ Most common ways for responsive layout are media queries and bootstrap
             </div>
         </div>
     </div>
-    <div class="travel-tips">
+    <div class="travel-tips" id="travel-tips">
         <p class="section-header">TRAVEL TIPS</p>
     </div>
     <div class="travel-gallery">
         <div class="travel-grid">
             <div class="travel-cell">
+                <a href="#"><img src="img/money-saving.JPG"></a>
+            </div>
+            <div class="travel-cell">
+                <a href="#"><img src="img/flight.JPG"></a>
+            </div>
+            <div class="travel-cell">
+                <a href="#"><img src="img/national-parks.JPG"></a>
             </div>
         </div>
+    </div>
+    <div class="contact" id="contact">
+        <p class="section-header">CONTACT</p>
+    </div>
+    <div class="contact-form" id="contact-form">
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name..">
+
+            <label for="email">Email address</label>
+            <input type="text" id="email" name="email" placeholder="Your email...">
+
+            <label for="question">Question</label>
+            <textarea id="question" name="question" placeholder="Write your question here..." style="height:175px"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>

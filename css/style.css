@@ -166,12 +166,82 @@ a {
     text-decoration: none;
 }
 
+/************************************************************
+TRAVEL TIPS DIV
+************************************************************/
 
+.travel-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.travel-cell {
+    width: calc(84% / 3);
+    margin: 2%;
+}
 
+.travel-cell img {
+    max-width: 100%;
+    min-height: 100%;
+    display: block;
+    padding: 0;
+    object-fit: contain;
+}
 
+.travel-cell a {
+    padding: 0;
+}
 
+#travel-tips {
+    padding-top: 40px;
+    margin-top: -45px;
+}
 
+/************************************************************
+CONTACT DIV
+************************************************************/
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 6px 0 22px 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+label {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+input[type=submit] {
+    background-color: #025402;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+input[type=submit]:hover {
+    color: #a6a6a6;
+}
+
+.contact-form {
+    padding: 20px;
+}
+
+#contact {
+    padding-top: 40px;
+    margin-top: -45px;
+}
+
+/************************************************************
+MEDIA QUERIES
+************************************************************/
 
 @media screen and (max-width: 750px) {
   .topnav a:not(:first-child) {display: none;}
@@ -228,6 +298,12 @@ a {
     width: 100%;
     margin: 0; 
     padding: 0;    
+  }
+
+  .travel-cell {
+      width: 100%;
+      margin: 0;
+      padding: 0;
   }
 
   .home h1 {
