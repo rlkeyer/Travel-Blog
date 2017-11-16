@@ -47,12 +47,14 @@ $(document).ready(function(){
 
 $(document).ready(function() {
     $('#submit').on('click', function() {
+        // Prevent default behavior from occuring after click
         event.preventDefault();
+        // If Submit button reads 'Submit', change the text
         if ($('#submit').val() === 'Submit') {
             $('#submit').val('Thank You!');
         }
         else {
             $('#submit').val('Submit');          
         }
-    })
-})
+    });
+});
