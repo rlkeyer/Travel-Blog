@@ -47,6 +47,7 @@ $(document).ready(function(){
 
 $(document).ready(function() {
     $('#submit').on('click', function() {
+        event.preventDefault();
         if ($('#submit').val() === 'Submit') {
             $('#submit').val('Thank You!');
         }
