@@ -53,3 +53,13 @@ $(document).ready(function() {
         }
     });
 });
+
+///////////////////////////////////////////
+// STOP ANCHOR LINKS FROM ADDING A HASH TO URL
+///////////////////////////////////////////
+
+$(document).ready(function() {
+    $('a').on('click', function(event) {
+        event.preventDefault();
+    });
+});
