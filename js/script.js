@@ -42,11 +42,11 @@ $(document).ready(function(){
 });
 
 ///////////////////////////////////////////
-// SMOOTH SCROLLING
+// CHANGE FORM BUTTON ON CLICK
 ///////////////////////////////////////////
 
 $(document).ready(function() {
-    $('#submit').on('click', function() {
+    $('#submit').on('click', function(event) {
         // Prevent default behavior from occuring after click
         event.preventDefault();
         // If Submit button reads 'Submit', change the text
