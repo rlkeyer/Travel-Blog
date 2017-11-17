@@ -28,25 +28,20 @@ $(document).ready(function(){
       // Store hash
       var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      // Adding smooth scrolling with animate
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
+      }, 800);
+    }
   });
 });
 
 ///////////////////////////////////////////
-// SMOOTH SCROLLING
+// CHANGE FORM BUTTON ON CLICK
 ///////////////////////////////////////////
 
 $(document).ready(function() {
-    $('#submit').on('click', function() {
+    $('#submit').on('click', function(event) {
         // Prevent default behavior from occuring after click
         event.preventDefault();
         // If Submit button reads 'Submit', change the text
@@ -56,5 +51,15 @@ $(document).ready(function() {
         else {
             $('#submit').val('Submit');          
         }
+    });
+});
+
+///////////////////////////////////////////
+// STOP ANCHOR LINKS FROM ADDING A HASH TO URL
+///////////////////////////////////////////
+
+$(document).ready(function() {
+    $('a').on('click', function(event) {
+        event.preventDefault();
     });
 });
